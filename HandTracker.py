@@ -1,12 +1,12 @@
 import cv2
 import mediapipe as mp
 
-# Initialize Mediapipe Hands
+# Initializes Mediapipe Hands
 mp_hands = mp.solutions.hands
 mp_drawing = mp.solutions.drawing_utils
 hands = mp_hands.Hands(max_num_hands=1, min_detection_confidence=0.7)
 
-# Start webcam
+# This line starts the webcam
 cap = cv2.VideoCapture(0)
 
 while True:
